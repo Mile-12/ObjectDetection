@@ -4,7 +4,7 @@ Usage:
 
    import prediction function from pred.py
    
-   copy 'TrainedModel.h5' to the path of caller module
+   copy 'Model.h5' to the path of caller module
    
    function usage: predition(path_of_image)
    
