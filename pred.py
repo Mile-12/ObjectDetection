@@ -1,14 +1,16 @@
 import tensorflow as tf
 import numpy as np
 
-model = tf.keras.models.load_model('TrainedModel.h5')
+model = tf.keras.models.load_model('Model.h5')
 
-label_map = {'catfish': 0,
- 'crab': 1,
- 'croaker': 2,
- 'lobster': 3,
- 'shrimp': 4,
- 'tilapia': 5}
+label_map ={'crab': 0,
+ 'haddock': 1,
+ 'hake': 2,
+ 'ling': 3,
+ 'octopus': 4,
+ 'plaice': 5,
+ 'ray': 6,
+ 'sardine': 7}
 
 
 def prediction(image_path):
