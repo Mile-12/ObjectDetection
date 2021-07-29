@@ -84,7 +84,7 @@ x=base_model.output
 x=tf.keras.layers.GlobalAveragePooling2D()(x)
 x=tf.keras.layers.Dense(512,activation='relu')(x) #dense layer 1
 x=tf.keras.layers.Dense(256,activation='relu')(x) #dense layer 2
-preds=tf.keras.layers.Dense(6,activation='softmax')(x) #final layer with softmax activation
+preds=tf.keras.layers.Dense(8,activation='softmax')(x) #final layer with softmax activation
 
 model=tf.keras.Model(inputs=base_model.input,outputs=preds)
 
