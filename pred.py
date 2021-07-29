@@ -3,14 +3,14 @@ import numpy as np
 
 model = tf.keras.models.load_model('Model.h5')
 
-label_map ={'crab': 0,
- 'haddock': 1,
- 'hake': 2,
- 'ling': 3,
- 'octopus': 4,
- 'plaice': 5,
- 'ray': 6,
- 'sardine': 7}
+label_map ={'Crab': 0,
+ 'Haddock': 1,
+ 'Hake': 2,
+ 'Ling': 3,
+ 'Octopus': 4,
+ 'Plaice, European': 5,
+ 'Ray': 6,
+ 'Sardine': 7}
 
 
 def prediction(image_path):
