@@ -38,6 +38,8 @@ def prediction(image):
             
         
 class ImageApi(Resource):
+    def get(self):
+        return{'Response':"Running"}
     def post(self):
         image = request.files.get('image','')
         img = Image.open(image)
