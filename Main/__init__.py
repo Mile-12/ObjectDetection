@@ -7,7 +7,7 @@ from Main.Routes.routes import initialize_routes
 from flask_cors import CORS
 # Place where app is defined
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'Main/api/uploads'
+#app.config['UPLOAD_FOLDER'] = 'Main/api/uploads'
 api = Api(app)
 CORS(app, resources={r'/api/*':{"origins": "*"}},allow_headers=[
     "Content-Type", "Authorization", "Access-Control-Allow-Methods"])
