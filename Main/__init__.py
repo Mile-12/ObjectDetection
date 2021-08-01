@@ -12,9 +12,6 @@ api = Api(app)
 CORS(app, resources={r'/api/*':{"origins": "*"}},allow_headers=[
     "Content-Type", "Authorization", "Access-Control-Allow-Methods"])
 #CORS(app)
-app.config['MONGODB_SETTINGS'] = {
-    'host': 'mongodb://localhost/API-DB'
-}
 
 initialize_routes(api)
 bcrypt = Bcrypt(app)
